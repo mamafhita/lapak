@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pembuat Kue - Lapak Mama Fhita</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Remixicon Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Google Fonts (Poppins & Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#ec4899',
+                            rose: '#f43f5e',
+                            amber: '#f59e0b',
+                            dark: '#0f172a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ec4899;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
+
+    <!-- HERO SECTION PORTOFOLIO MAMA FHITA -->
+    <section class="relative py-20 overflow-hidden border-b border-slate-800">
+        <!-- Accent Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Foto Profil Pembuat Kue -->
+                <div class="lg:col-span-5 text-center">
+                    <div class="relative inline-block group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-pink-500 via-rose-500 to-amber-400 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+                        <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-2xl">
+                            <img 
+                                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" 
+                                alt="Mama Fhita - Baker & Owner Lapak Mama Fhita" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-left">
+                                <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-pink-500 text-white shadow-md">
+                                    Head Baker & Founder
+                                </span>
+                                <h3 class="font-serif text-2xl font-bold text-white mt-1">Mama Fhita</h3>
+                                <p class="text-xs text-slate-300">Spesialis Kue Tart & Bento Cake Custom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOMBOL BACK BROWSER -->
+<div class="fixed top-5 left-5 z-50">
+    <button onclick="history.back()" 
+            class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-900/90 border border-slate-700 text-slate-200 text-xs font-bold shadow-2xl backdrop-blur-md hover:bg-slate-800 hover:text-pink-400 transition-all duration-300 cursor-pointer">
+        <i class="ri-arrow-left-s-line text-lg"></i> Kembali
+    </button>
+</div>
+
+                <!-- Teks Narasi & Cerita Diri (Copywriting Menarik) -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20">
+                        <i class="ri-heart-3-fill text-pink-500"></i> WELCOME TO PROFIL MAMA FHITA
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-white">
+                        Sentuhan manis buat<span class="bg-gradient-to-r from-pink-400 via-rose-400 to-amber-300 bg-clip-text text-transparent"> <br> hari spesial kamu</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Halo! Saya <strong class="text-white">Armi Mulyati</strong>, sosok di balik setiap kelezatan <strong class="text-pink-400">Lapak Mama Fhita</strong>.
+
+                        Berawal dari sekadar hobi meracik cemilan manis buat keluarga tercinta, kini hadir untuk menemani tiap momen bahagiamu lewat kue tart estetik, bento cake kekinian, hingga aneka kreasi jajanan gurih bermutu tinggi.
+                        <br>
+                        kue bukan cuma penutup hidangan yang manis, tapi juga simbol cinta, kejutan manis, dan alasan di balik senyum bahagia bareng orang tersayang. Makanya, semua kue di sini dibuat fresh berdasarkan pesanan (made to order) tanpa bahan pengawet sintetis.
+
+                        Siap bikin hari spesialmu makin berkesan? Let's celebrate with us!
+                    </p>
+
+                    <!-- Statistik / Highlight Keunggulan -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800">
+                        <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                            <span class="block font-serif text-2xl font-black text-amber-400">100%</span>
+                            <span class="text-[11px] text-slate-400">Bahan Halal & Fresh</span>
+                        </div>
+                        <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                            <span class="block font-serif text-2xl font-black text-pink-400">Custom</span>
+                            <span class="text-[11px] text-slate-400">Desain Sesuai Request</span>
+                        </div>
+                        <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                            <span class="block font-serif text-2xl font-black text-rose-400">Hygienic</span>
+                            <span class="text-[11px] text-slate-400">Dapur Bersih & Rapi</span>
+                        </div>
+                    </div>
+
+                        </a>
+                        <a href="#keunggulan" class="px-6 py-3 rounded-2xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition-colors font-semibold text-xs flex items-center gap-2">
+                            <i class="ri-award-line"></i> Mengapa Memilih Mama Fhita?
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 ALASAN UTAMA PELANGGAN MENYUKAI KUE MAMA FHITA -->
+    <section id="keunggulan" class="py-16 bg-slate-900/40 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-xs font-black uppercase tracking-widest text-pink-400">Komitmen Kualitas</span>
+                <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-white">Alasan Pelanggan Selalu Kembali</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Setiap adonan diolah penuh ketelitian untuk menghadirkan cita rasa sempurna.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Poin 1 -->
+                <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 hover:border-pink-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl font-bold">
+                        <i class="ri-cake-3-line"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Bolu Lembut & Tidak Seret</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Menggunakan resep rahasia keluarga dengan teknik pengocokan adonan yang pas, menghasilkan bolu yang super empuk dan lumer di mulut.
+                    </p>
+                </div>
+
+                <!-- Poin 2 -->
+                <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 hover:border-pink-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold">
+                        <i class="ri-restaurant-line"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Manis Pas & Tidak Entek</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Kadar gula dan rasa buttercream disesuaikan agar tidak bikin enek. Cocok dinikmati oleh anak-anak hingga orang tua.
+                    </p>
+                </div>
+
+                <!-- Poin 3 -->
+                <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 hover:border-pink-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-2xl font-bold">
+                        <i class="ri-palette-line"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Bisa Request Desain Bebas</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Punya contoh foto kue dari Pinterest atau Instagram? Kirimkan ke WhatsApp, Mama Fhita siap wujudkan sesuai keinginan Anda.
+                    </p>
+                </div>
+
+                <!-- Poin 4 -->
+                <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 hover:border-pink-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl font-bold">
+                        <i class="ri-time-line"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Selalu Fresh On-Time</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Kue baru dipanggang beberapa jam sebelum diambil/dikirim agar aroma harum manisnya tetap terjaga segar di hari H acara.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION PROFIL MAMA FHITA & KELUARGA -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-amber-400">TENTANG KAMI</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-2">Sosok Dibalik Lapak Mama Fhita</h2>
+        <p class="text-xs text-slate-400 mt-2">Kisah cinta, kehangatan keluarga, dan dedikasi dalam setiap sajian manis.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-900/60 border border-slate-800 p-6 md:p-8 rounded-3xl backdrop-blur-md">
+        
+        <!-- Bingkai Foto Keluarga / Mama Fhita -->
+        <div class="relative group rounded-2xl overflow-hidden border-2 border-pink-500/30 shadow-2xl">
+            <!-- Ganti src dengan lokasi foto keluarga / Mama Fhita kamu -->
+            <img 
+              src="assets/images/foto-keluarga.jpg" 
+              alt="Foto Dapur & Keluarga Mama Fhita" 
+              class="w-full h-80 md:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-center">
+                <span class="text-xs font-bold text-pink-400 bg-slate-900/90 px-3 py-1 rounded-full border border-pink-500/30">
+                    Dapur Hangat Keluarga
+                </span>
+            </div>
+        </div>
+
+        <!-- Narasi Cerita Mama Fhita -->
+        <div class="space-y-4 text-left">
+            <h3 class="text-xl font-extrabold text-white leading-snug">
+                Berawal dari Dapur Rumah, Dibuat Sepenuh Hati untuk Keluarga
+            </h3>
+            
+            <p class="text-xs text-slate-300 leading-relaxed">
+                Lapak Mama Fhita lahir dari kebiasaan hangat di rumah—menyajikan olahan kue dan jajanan buatan tangan sendiri untuk anak-anak dan keluarga tercinta.
+            </p>
+
+            <p class="text-xs text-slate-300 leading-relaxed">
+                Bagi Mama Fhita, memasak bukan sekadar meracik resep, melainkan cara menyampaikan rasa kasih sayang. Setiap adonan kue tart, bolu, hingga minuman segar dibuat menggunakan bahan pilihan yang bersih, terjamin, dan tanpa pengawet.
+            </p>
+
+            <!-- Poin Kebanggaan / Filosofi -->
+            <div class="pt-4 border-t border-slate-800 grid grid-cols-2 gap-4">
+                <div class="flex items-start gap-2.5">
+                    <i class="ri-heart-3-fill text-pink-500 text-lg mt-0.5"></i>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">Resep Rumahan</h4>
+                        <p class="text-[11px] text-slate-400">Rasa otentik buatan tangan</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-2.5">
+                    <i class="ri-shield-check-fill text-amber-400 text-lg mt-0.5"></i>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">100% Higienis</h4>
+                        <p class="text-[11px] text-slate-400">Aman dikonsumsi keluarga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- BANNER AJAKAN PESAN KUE (CALL TO ACTION) -->
+    <section class="py-16 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-pink-500/30 bg-gradient-to-b from-slate-900/90 to-pink-950/30 shadow-2xl space-y-5">
+                <div class="w-16 h-16 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center text-3xl mx-auto">
+                    <i class="ri-chat-smile-3-line"></i>
+                </div>
+                <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-white">Ingin Buat Acara Jadi Lebih Berkesan?</h2>
+                <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
+                    Diskusikan ide kue impian Anda bersama Mama Fhita. Mulai dari pilihan rasa, hiasan nama, hingga tanggal pengiriman.
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/6285954242327?text=Halo%20Mama%20Fhita,%20saya%20tertarik%20pesan%20kue%20tart%20custom" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 text-white font-bold text-xs shadow-xl shadow-pink-500/30 hover:scale-105 transition-all">
+                        <i class="ri-whatsapp-line text-lg"></i> Hubungi Mama Fhita Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800 bg-slate-950 text-center text-xs text-slate-500">
+        <p>&copy; <span id="currentYear"></span> Lapak Mama Fhita ❤️ Pembuat Kue Tart Custom Terpercaya.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update tahun otomatis
+            const yearSpan = document.getElementById('currentYear');
+            if (yearSpan) {
+                yearSpan.innerText = new Date().getFullYear();
+            }
+
+            // Klik gambar untuk melihat ukuran penuh
+            const cards = document.querySelectorAll('.baker-card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const img = card.querySelector('img');
+                    if (img && img.src) {
+                        window.open(img.src, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
