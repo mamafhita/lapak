@@ -291,18 +291,17 @@
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-slate-800 bg-slate-950 text-center text-xs text-slate-500">
-        <p>&copy; <span id="currentYear"></span> Lapak Mama Fhita ❤️ Pembuat Kue Tart Custom Terpercaya.</p>
+       <p>&copy; <span id="currentYear"></span> Lapak Mama Fhita ❤️ Pembuat Kue Tart Custom Terpercaya.</p>
     </footer>
 
     <!-- JAVASCRIPT -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Update tahun otomatis
-            const yearSpan = document.getElementById('currentYear');
-            if (yearSpan) {
-                yearSpan.innerText = new Date().getFullYear();
-            }
-
+       document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
             // Klik gambar untuk melihat ukuran penuh
             const cards = document.querySelectorAll('.baker-card');
             cards.forEach(card => {
